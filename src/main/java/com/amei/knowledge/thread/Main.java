@@ -17,6 +17,8 @@ public class Main {
         threadPool.execute(task3);
         //关闭线程池
         threadPool.shutdown();
+//        String s = String.valueOf();
+        task3.toString();
         //打印
 //        pool-1-thread-1
 //        pool-1-thread-1
