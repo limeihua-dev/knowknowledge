@@ -12,11 +12,10 @@ public class CustomThreadFactory implements ThreadFactory {
 
     @Override
     public Thread newThread(Runnable r) {
-
         //创建线程，并指定任务
         Thread thread = new Thread(r);
         //设置线程名称
         thread.setName("线程" + atomicInteger + " 号");
-        return null;
+        return thread;
     }
 }
