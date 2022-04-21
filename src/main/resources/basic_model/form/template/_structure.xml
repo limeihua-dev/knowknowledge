@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 基础模型 - 表单定义模型 -->
+<formDefinitionModel> 
+  <!-- 表单定义ID -->  
+  <id>id</id>  
+  <!-- 表单名称 -->  
+  <caption>caption</caption>  
+  <!-- 表单分类ID 注意： 表单定义分类指定后系统不支持更换分类 -->  
+  <categoryId>categoryId</categoryId>  
+  <categoryName>categoryName</categoryName>  
+  <!-- 是否为单表 -->  
+  <!-- 1 为单表模式 0 为主子表模式 -->  
+  <isSingle>single</isSingle>  
+  <!-- 表单创建人 -->  
+  <createAccount>admin</createAccount>  
+  <!-- 表单创建时间 -->  
+  <createTime>1615540152778</createTime>  
+  <!-- 表单属性集合 -->  
+  <attributeItems> 
+    <!-- 属性ID 示例 1 -->  
+    <attribute id="8b326463-20e8-4b7e-bcf1-ca9f8ee6ef1f"> 
+      <!-- 属性英文标识符 -->  
+      <name>user_mobile</name>  
+      <!-- 属性中文标识符 -->  
+      <caption>手机号码</caption>  
+      <!-- 属性类别 -->  
+      <type>text</type>  
+      <!-- 属性默认值 -->  
+      <default/>  
+      <!-- 属性排序 -->  
+      <sort>10</sort>  
+      <!-- 是否必填 1 是 0 否-->  
+      <require>1</require>  
+      <!-- 是否隐藏 1 是 0 否-->  
+      <hidden>0</hidden>  
+      <!-- 是否为系统内置属性 -->  
+      <system>0</system>  
+      <!-- 属性类型配置json信息 -->  
+      <!-- 不同类型属性 配置json结构不同，此处不一一例举 -->  
+      <config/> 
+    </attribute>  
+    <!-- 属性ID 示例 2 -->  
+    <attribute id="5919026b-224d-4e77-aa01-b08454192f5a"> 
+      <name>user_email</name>  
+      <caption>用户邮箱</caption>  
+      <type>text</type>  
+      <default/>  
+      <sort>20</sort>  
+      <require>1</require>  
+      <hidden>0</hidden>  
+      <system>0</system>  
+      <config/> 
+    </attribute> 
+  </attributeItems>  
+  <!-- 表单属性规则配置 -->  
+  <attributeRuleConfig> 
+    <!-- 隐藏属性集合 -->  
+    <invisibleRuleList> 
+      <attribute id="8b326463-20e8-4b7e-bcf1-ca9f8ee6ef1f"/>  
+      <attribute id="5919026b-224d-4e77-aa01-b08454192f5a"/> 
+    </invisibleRuleList>  
+    <!-- 属性校验规则 -->  
+    <!-- 属性校验规则 系统内置常见规则 如 手机号码、邮箱、身份证号、组织信用代码等 -->  
+    <verificationRuleList> 
+      <attribute id="8b326463-20e8-4b7e-bcf1-ca9f8ee6ef1f" checkType="mobile"/>  
+      <attribute id="5919026b-224d-4e77-aa01-b08454192f5a" checkType="email"/> 
+    </verificationRuleList>  
+    <!-- 修改规则 -->  
+    <modifyRuleList/>  
+    <!-- 必填规则 -->  
+    <requireRuleList/>  
+    <!-- 属性自动计算规则 此处集成规则引擎执行计算 -->  
+    <computedAttrRuleList> 
+      <attribute id="8b326463-20e8-4b7e-bcf1-ca9f8ee6ef1f" ruleGroupId="规则组ID-1"/>  
+      <attribute id="5919026b-224d-4e77-aa01-b08454192f5a" ruleGroupId="规则组ID-2"/> 
+    </computedAttrRuleList>  
+    <!-- 表单字段权限控制 业务模型中 单独生成配置XML --> 
+  </attributeRuleConfig>  
+  <!-- 子表（明细）表配置信息 -->  
+  <!-- 该标签 仅在 isSingle值为0 时（主子表模式）存在 -->  
+  <detailFormItems> 
+    <detailForm id="子表1 ID" caption="子表1 名称"> 
+      <!-- 子表-1 明细表单属性集合 -->  
+      <attributeItems> 
+        <!-- 属性ID 示例 1 -->  
+        <attribute id="8b326463-20e8-4b7e-bcf1-ca9f8ee6ef1f"> 
+          <!-- 属性英文标识符 -->  
+          <name>user_mobile</name>  
+          <!-- 属性中文标识符 -->  
+          <caption>手机号码</caption>  
+          <!-- 属性类别 -->  
+          <type>text</type>  
+          <!-- 属性默认值 -->  
+          <default/>  
+          <!-- 属性排序 -->  
+          <sort>10</sort>  
+          <!-- 是否必填 1 是 0 否-->  
+          <require>1</require>  
+          <!-- 是否隐藏 1 是 0 否-->  
+          <hidden>0</hidden>  
+          <!-- 是否为系统内置属性 -->  
+          <system>0</system>  
+          <!-- 属性类型配置json信息 -->  
+          <config/> 
+        </attribute>  
+        <!-- 属性ID 示例 2 -->  
+        <attribute id="5919026b-224d-4e77-aa01-b08454192f5a"> 
+          <!-- 属性英文标识符 -->  
+          <name>user_email</name>  
+          <!-- 属性中文标识符 -->  
+          <caption>用户邮箱</caption>  
+          <!-- 属性类别 -->  
+          <type>text</type>  
+          <!-- 属性默认值 -->  
+          <default/>  
+          <!-- 属性排序 -->  
+          <sort>20</sort>  
+          <!-- 是否必填 1 是 0 否-->  
+          <require>1</require>  
+          <!-- 是否隐藏 1 是 0 否-->  
+          <hidden>0</hidden>  
+          <!-- 是否为系统内置属性 -->  
+          <system>0</system>  
+          <!-- 属性类型配置json信息 -->  
+          <config/> 
+        </attribute> 
+      </attributeItems>  
+      <!-- 子表-1 明细表单属性规则配置 -->  
+      <attributeRuleConfig> 
+        <!-- 隐藏属性集合 -->  
+        <invisibleRuleList> 
+          <attribute id="8b326463-20e8-4b7e-bcf1-ca9f8ee6ef1f"/>  
+          <attribute id="5919026b-224d-4e77-aa01-b08454192f5a"/> 
+        </invisibleRuleList>  
+        <!-- 属性校验规则 -->  
+        <!-- 属性校验规则 系统内置常见规则 如 手机号码、邮箱、身份证号、组织信用代码等 -->  
+        <verificationRuleList> 
+          <attribute id="8b326463-20e8-4b7e-bcf1-ca9f8ee6ef1f" checkType="mobile"/>  
+          <attribute id="5919026b-224d-4e77-aa01-b08454192f5a" checkType="email"/> 
+        </verificationRuleList>  
+        <!-- 修改规则 -->  
+        <modifyRuleList/>  
+        <!-- 必填规则 -->  
+        <requireRuleList/>  
+        <!-- 属性自动计算规则 此处集成规则引擎执行计算 -->  
+        <computedAttrRuleList> 
+          <attribute id="8b326463-20e8-4b7e-bcf1-ca9f8ee6ef1f" ruleGroupId="规则组ID-1"/>  
+          <attribute id="5919026b-224d-4e77-aa01-b08454192f5a" ruleGroupId="规则组ID-2"/> 
+        </computedAttrRuleList>  
+        <!-- 表单字段权限控制 业务模型中 单独生成配置XML --> 
+      </attributeRuleConfig> 
+    </detailForm>  
+    <detailForm id="子表2 ID" caption="子表2 名称">...</detailForm> 
+  </detailFormItems> 
+</formDefinitionModel>

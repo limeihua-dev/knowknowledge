@@ -1,0 +1,322 @@
+/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=63977:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -classpath /Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/ext/jaccess.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/lib/packager.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home/lib/tools.jar:/Users/meihua/IdeaProjects/knowledge/target/classes:/Users/meihua/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.3.6.RELEASE/spring-boot-starter-web-2.3.6.RELEASE.jar:/Users/meihua/.m2/repository/org/springframework/boot/spring-boot-starter/2.3.6.RELEASE/spring-boot-starter-2.3.6.RELEASE.jar:/Users/meihua/.m2/repository/org/springframework/boot/spring-boot/2.3.6.RELEASE/spring-boot-2.3.6.RELEASE.jar:/Users/meihua/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.3.6.RELEASE/spring-boot-autoconfigure-2.3.6.RELEASE.jar:/Users/meihua/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.3.6.RELEASE/spring-boot-starter-logging-2.3.6.RELEASE.jar:/Users/meihua/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/Users/meihua/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/Users/meihua/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.13.3/log4j-to-slf4j-2.13.3.jar:/Users/meihua/.m2/repository/org/apache/logging/log4j/log4j-api/2.13.3/log4j-api-2.13.3.jar:/Users/meihua/.m2/repository/org/slf4j/jul-to-slf4j/1.7.30/jul-to-slf4j-1.7.30.jar:/Users/meihua/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/Users/meihua/.m2/repository/org/yaml/snakeyaml/1.26/snakeyaml-1.26.jar:/Users/meihua/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.3.6.RELEASE/spring-boot-starter-json-2.3.6.RELEASE.jar:/Users/meihua/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.3/jackson-databind-2.11.3.jar:/Users/meihua/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.3/jackson-annotations-2.11.3.jar:/Users/meihua/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.3/jackson-core-2.11.3.jar:/Users/meihua/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.11.3/jackson-datatype-jdk8-2.11.3.jar:/Users/meihua/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.11.3/jackson-datatype-jsr310-2.11.3.jar:/Users/meihua/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.11.3/jackson-module-parameter-names-2.11.3.jar:/Users/meihua/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.3.6.RELEASE/spring-boot-starter-tomcat-2.3.6.RELEASE.jar:/Users/meihua/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.39/tomcat-embed-core-9.0.39.jar:/Users/meihua/.m2/repository/org/glassfish/jakarta.el/3.0.3/jakarta.el-3.0.3.jar:/Users/meihua/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.39/tomcat-embed-websocket-9.0.39.jar:/Users/meihua/.m2/repository/org/springframework/spring-web/5.2.11.RELEASE/spring-web-5.2.11.RELEASE.jar:/Users/meihua/.m2/repository/org/springframework/spring-beans/5.2.11.RELEASE/spring-beans-5.2.11.RELEASE.jar:/Users/meihua/.m2/repository/org/springframework/spring-webmvc/5.2.11.RELEASE/spring-webmvc-5.2.11.RELEASE.jar:/Users/meihua/.m2/repository/org/springframework/spring-context/5.2.11.RELEASE/spring-context-5.2.11.RELEASE.jar:/Users/meihua/.m2/repository/org/springframework/spring-expression/5.2.11.RELEASE/spring-expression-5.2.11.RELEASE.jar:/Users/meihua/.m2/repository/org/projectlombok/lombok/1.18.16/lombok-1.18.16.jar:/Users/meihua/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/meihua/.m2/repository/org/springframework/spring-core/5.2.11.RELEASE/spring-core-5.2.11.RELEASE.jar:/Users/meihua/.m2/repository/org/springframework/spring-jcl/5.2.11.RELEASE/spring-jcl-5.2.11.RELEASE.jar:/Users/meihua/.m2/repository/org/springframework/boot/spring-boot-starter-data-mongodb/2.3.6.RELEASE/spring-boot-starter-data-mongodb-2.3.6.RELEASE.jar:/Users/meihua/.m2/repository/org/mongodb/mongodb-driver-sync/4.0.5/mongodb-driver-sync-4.0.5.jar:/Users/meihua/.m2/repository/org/mongodb/bson/4.0.5/bson-4.0.5.jar:/Users/meihua/.m2/repository/org/mongodb/mongodb-driver-core/4.0.5/mongodb-driver-core-4.0.5.jar:/Users/meihua/.m2/repository/org/springframework/data/spring-data-mongodb/3.0.5.RELEASE/spring-data-mongodb-3.0.5.RELEASE.jar:/Users/meihua/.m2/repository/org/springframework/spring-tx/5.2.11.RELEASE/spring-tx-5.2.11.RELEASE.jar:/Users/meihua/.m2/repository/org/springframework/data/spring-data-commons/2.3.5.RELEASE/spring-data-commons-2.3.5.RELEASE.jar:/Users/meihua/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar:/Users/meihua/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.3.6.RELEASE/spring-boot-starter-aop-2.3.6.RELEASE.jar:/Users/meihua/.m2/repository/org/springframework/spring-aop/5.2.11.RELEASE/spring-aop-5.2.11.RELEASE.jar:/Users/meihua/.m2/repository/org/aspectj/aspectjweaver/1.9.4/aspectjweaver-1.9.4.jar:/Users/meihua/.m2/repository/org/aspectj/aspectjrt/1.8.9/aspectjrt-1.8.9.jar:/Users/meihua/.m2/repository/com/alibaba/fastjson/1.2.58/fastjson-1.2.58.jar:/Users/meihua/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/Users/meihua/.m2/repository/org/jsoup/jsoup/1.12.1/jsoup-1.12.1.jar com.amei.knowledge.javaDemo.file.readFile
+/Users/meihua
+source path:/Users/meihua/IdeaProjects/knowledge/target/classes/
+PATH=:/Users/meihua/IdeaProjects/knowledge/src/main/resources/basic_model/form/template/_structure.xml
+-----------------
+filePath:---->/Users/meihua/IdeaProjects/knowledge/src/main/resources/basic_model/form/template/_structure.xml
+以字节为单位读取文件内容，一次读一个字节：
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 基础模型 - 表单定义模型 -->
+<formDefinitionModel>
+  <!-- 表单定义ID -->
+  <id>id</id>
+  <!-- 表单名称 -->
+  <caption>caption</caption>
+  <!-- 表单分类ID 注意： 表单定义分类指定后系统不支持更换分类 -->
+  <categoryId>categoryId</categoryId>
+  <categoryName>categoryName</categoryName>
+  <!-- 是否为单表 -->
+  <!-- 1 为单表模式 0 为主子表模式 -->
+  <isSingle>single</isSingle>
+  <!-- 表单创建人 -->
+  <createAccount>admin</createAccount>
+  <!-- 表单创建时间 -->
+  <createTime>1615540152778</createTime>
+  <!-- 表单属性集合 -->
+  <attributeItems>
+    <!-- 属性ID 示例 1 -->
+    <attribute id="8b326463-20e8-4b7e-bcf1-ca9f8ee6ef1f">
+      <!-- 属性英文标识符 -->
+      <name>user_mobile</name>
+      <!-- 属性中文标识符 -->
+      <caption>手机号码</caption>
+      <!-- 属性类别 -->
+      <type>text</type>
+      <!-- 属性默认值 -->
+      <default/>
+      <!-- 属性排序 -->
+      <sort>10</sort>
+      <!-- 是否必填 1 是 0 否-->
+      <require>1</require>
+      <!-- 是否隐藏 1 是 0 否-->
+      <hidden>0</hidden>
+      <!-- 是否为系统内置属性 -->
+      <system>0</system>
+      <!-- 属性类型配置json信息 -->
+      <!-- 不同类型属性 配置json结构不同，此处不一一例举 -->
+      <config/>
+    </attribute>
+    <!-- 属性ID 示例 2 -->
+    <attribute id="5919026b-224d-4e77-aa01-b08454192f5a">
+      <name>user_email</name>
+      <caption>用户邮箱</caption>
+      <type>text</type>
+      <default/>
+      <sort>20</sort>
+      <require>1</require>
+      <hidden>0</hidden>
+      <system>0</system>
+      <config/>
+    </attribute>
+  </attributeItems>
+  <!-- 表单属性规则配置 -->
+  <attributeRuleConfig>
+    <!-- 隐藏属性集合 -->
+    <invisibleRuleList>
+      <attribute id="8b326463-20e8-4b7e-bcf1-ca9f8ee6ef1f"/>
+      <attribute id="5919026b-224d-4e77-aa01-b08454192f5a"/>
+    </invisibleRuleList>
+    <!-- 属性校验规则 -->
+    <!-- 属性校验规则 系统内置常见规则 如 手机号码、邮箱、身份证号、组织信用代码等 -->
+    <verificationRuleList>
+      <attribute id="8b326463-20e8-4b7e-bcf1-ca9f8ee6ef1f" checkType="mobile"/>
+      <attribute id="5919026b-224d-4e77-aa01-b08454192f5a" checkType="email"/>
+    </verificationRuleList>
+    <!-- 修改规则 -->
+    <modifyRuleList/>
+    <!-- 必填规则 -->
+    <requireRuleList/>
+    <!-- 属性自动计算规则 此处集成规则引擎执行计算 -->
+    <computedAttrRuleList>
+      <attribute id="8b326463-20e8-4b7e-bcf1-ca9f8ee6ef1f" ruleGroupId="规则组ID-1"/>
+      <attribute id="5919026b-224d-4e77-aa01-b08454192f5a" ruleGroupId="规则组ID-2"/>
+    </computedAttrRuleList>
+    <!-- 表单字段权限控制 业务模型中 单独生成配置XML -->
+  </attributeRuleConfig>
+  <!-- 子表（明细）表配置信息 -->
+  <!-- 该标签 仅在 isSingle值为0 时（主子表模式）存在 -->
+  <detailFormItems>
+    <detailForm id="子表1 ID" caption="子表1 名称">
+      <!-- 子表-1 明细表单属性集合 -->
+      <attributeItems>
+        <!-- 属性ID 示例 1 -->
+        <attribute id="8b326463-20e8-4b7e-bcf1-ca9f8ee6ef1f">
+          <!-- 属性英文标识符 -->
+          <name>user_mobile</name>
+          <!-- 属性中文标识符 -->
+          <caption>手机号码</caption>
+          <!-- 属性类别 -->
+          <type>text</type>
+          <!-- 属性默认值 -->
+          <default/>
+          <!-- 属性排序 -->
+          <sort>10</sort>
+          <!-- 是否必填 1 是 0 否-->
+          <require>1</require>
+          <!-- 是否隐藏 1 是 0 否-->
+          <hidden>0</hidden>
+          <!-- 是否为系统内置属性 -->
+          <system>0</system>
+          <!-- 属性类型配置json信息 -->
+          <config/>
+        </attribute>
+        <!-- 属性ID 示例 2 -->
+        <attribute id="5919026b-224d-4e77-aa01-b08454192f5a">
+          <!-- 属性英文标识符 -->
+          <name>user_email</name>
+          <!-- 属性中文标识符 -->
+          <caption>用户邮箱</caption>
+          <!-- 属性类别 -->
+          <type>text</type>
+          <!-- 属性默认值 -->
+          <default/>
+          <!-- 属性排序 -->
+          <sort>20</sort>
+          <!-- 是否必填 1 是 0 否-->
+          <require>1</require>
+          <!-- 是否隐藏 1 是 0 否-->
+          <hidden>0</hidden>
+          <!-- 是否为系统内置属性 -->
+          <system>0</system>
+          <!-- 属性类型配置json信息 -->
+          <config/>
+        </attribute>
+      </attributeItems>
+      <!-- 子表-1 明细表单属性规则配置 -->
+      <attributeRuleConfig>
+        <!-- 隐藏属性集合 -->
+        <invisibleRuleList>
+          <attribute id="8b326463-20e8-4b7e-bcf1-ca9f8ee6ef1f"/>
+          <attribute id="5919026b-224d-4e77-aa01-b08454192f5a"/>
+        </invisibleRuleList>
+        <!-- 属性校验规则 -->
+        <!-- 属性校验规则 系统内置常见规则 如 手机号码、邮箱、身份证号、组织信用代码等 -->
+        <verificationRuleList>
+          <attribute id="8b326463-20e8-4b7e-bcf1-ca9f8ee6ef1f" checkType="mobile"/>
+          <attribute id="5919026b-224d-4e77-aa01-b08454192f5a" checkType="email"/>
+        </verificationRuleList>
+        <!-- 修改规则 -->
+        <modifyRuleList/>
+        <!-- 必填规则 -->
+        <requireRuleList/>
+        <!-- 属性自动计算规则 此处集成规则引擎执行计算 -->
+        <computedAttrRuleList>
+          <attribute id="8b326463-20e8-4b7e-bcf1-ca9f8ee6ef1f" ruleGroupId="规则组ID-1"/>
+          <attribute id="5919026b-224d-4e77-aa01-b08454192f5a" ruleGroupId="规则组ID-2"/>
+        </computedAttrRuleList>
+        <!-- 表单字段权限控制 业务模型中 单独生成配置XML -->
+      </attributeRuleConfig>
+    </detailForm>
+    <detailForm id="子表2 ID" caption="子表2 名称">...</detailForm>
+  </detailFormItems>
+</formDefinitionModel>
+以字节为单位读取文件内容，一次读多个字节：
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 基础模型 - 表单定义模型 -->
+<formDefinitionModel>
+  <!-- 表单定义ID -->
+  <id>id</id>
+  <!-- 表单名称 -->
+  <caption>caption</caption>
+  <!-- 表单分类ID 注意： 表单定义分类指定后系统不支持更换分类 -->
+  <categoryId>categoryId</categoryId>
+  <categoryName>categoryName</categoryName>
+  <!-- 是否为单表 -->
+  <!-- 1 为单表模式 0 为主子表模式 -->
+  <isSingle>single</isSingle>
+  <!-- 表单创建人 -->
+  <createAccount>admin</createAccount>
+  <!-- 表单创建时间 -->
+  <createTime>1615540152778</createTime>
+  <!-- 表单属性集合 -->
+  <attributeItems>
+    <!-- 属性ID 示例 1 -->
+    <attribute id="8b326463-20e8-4b7e-bcf1-ca9f8ee6ef1f">
+      <!-- 属性英文标识符 -->
+      <name>user_mobile</name>
+      <!-- 属性中文标识符 -->
+      <caption>手机号码</caption>
+      <!-- 属性类别 -->
+      <type>text</type>
+      <!-- 属性默认值 -->
+      <default/>
+      <!-- 属性排序 -->
+      <sort>10</sort>
+      <!-- 是否必填 1 是 0 否-->
+      <require>1</require>
+      <!-- 是否隐藏 1 是 0 否-->
+      <hidden>0</hidden>
+      <!-- 是否为系统内置属性 -->
+      <system>0</system>
+      <!-- 属性类型配置json信息 -->
+      <!-- 不同类型属性 配置json结构不同，此处不一一例举 -->
+      <config/>
+    </attribute>
+    <!-- 属性ID 示例 2 -->
+    <attribute id="5919026b-224d-4e77-aa01-b08454192f5a">
+      <name>user_email</name>
+      <caption>用户邮箱</caption>
+      <type>text</type>
+      <default/>
+      <sort>20</sort>
+      <require>1</require>
+      <hidden>0</hidden>
+      <system>0</system>
+      <config/>
+    </attribute>
+  </attributeItems>
+  <!-- 表单属性规则配置 -->
+  <attributeRuleConfig>
+    <!-- 隐藏属性集合 -->
+    <invisibleRuleList>
+      <attribute id="8b326463-20e8-4b7e-bcf1-ca9f8ee6ef1f"/>
+      <attribute id="5919026b-224d-4e77-aa01-b08454192f5a"/>
+    </invisibleRuleList>
+    <!-- 属性校验规则 -->
+    <!-- 属性校验规则 系统内置常见规则 如 手机号码、邮箱、身份证号、组织信用代码等 -->
+    <verificationRuleList>
+      <attribute id="8b326463-20e8-4b7e-bcf1-ca9f8ee6ef1f" checkType="mobile"/>
+      <attribute id="5919026b-224d-4e77-aa01-b08454192f5a" checkType="email"/>
+    </verificationRuleList>
+    <!-- 修改规则 -->
+    <modifyRuleList/>
+    <!-- 必填规则 -->
+    <requireRuleList/>
+    <!-- 属性自动计算规则 此处集成规则引擎执行计算 -->
+    <computedAttrRuleList>
+      <attribute id="8b326463-20e8-4b7e-bcf1-ca9f8ee6ef1f" ruleGroupId="规则组ID-1"/>
+      <attribute id="5919026b-224d-4e77-aa01-b08454192f5a" ruleGroupId="规则组ID-2"/>
+    </computedAttrRuleList>
+    <!-- 表单字段权限控制 业务模型中 单独生成配置XML -->
+  </attributeRuleConfig>
+  <!-- 子表（明细）表配置信息 -->
+  <!-- 该标签 仅在 isSingle值为0 时（主子表模式）存在 -->
+  <detailFormItems>
+    <detailForm id="子表1 ID" caption="子表1 名称">
+      <!-- 子表-1 明细表单属性集合 -->
+      <attributeItems>
+        <!-- 属性ID 示例 1 -->
+        <attribute id="8b326463-20e8-4b7e-bcf1-ca9f8ee6ef1f">
+          <!-- 属性英文标识符 -->
+          <name>user_mobile</name>
+          <!-- 属性中文标识符 -->
+          <caption>手机号码</caption>
+          <!-- 属性类别 -->
+          <type>text</type>
+          <!-- 属性默认值 -->
+          <default/>
+          <!-- 属性排序 -->
+          <sort>10</sort>
+          <!-- 是否必填 1 是 0 否-->
+          <require>1</require>
+          <!-- 是否隐藏 1 是 0 否-->
+          <hidden>0</hidden>
+          <!-- 是否为系统内置属性 -->
+          <system>0</system>
+          <!-- 属性类型配置json信息 -->
+          <config/>
+        </attribute>
+        <!-- 属性ID 示例 2 -->
+        <attribute id="5919026b-224d-4e77-aa01-b08454192f5a">
+          <!-- 属性英文标识符 -->
+          <name>user_email</name>
+          <!-- 属性中文标识符 -->
+          <caption>用户邮箱</caption>
+          <!-- 属性类别 -->
+          <type>text</type>
+          <!-- 属性默认值 -->
+          <default/>
+          <!-- 属性排序 -->
+          <sort>20</sort>
+          <!-- 是否必填 1 是 0 否-->
+          <require>1</require>
+          <!-- 是否隐藏 1 是 0 否-->
+          <hidden>0</hidden>
+          <!-- 是否为系统内置属性 -->
+          <system>0</system>
+          <!-- 属性类型配置json信息 -->
+          <config/>
+        </attribute>
+      </attributeItems>
+      <!-- 子表-1 明细表单属性规则配置 -->
+      <attributeRuleConfig>
+        <!-- 隐藏属性集合 -->
+        <invisibleRuleList>
+          <attribute id="8b326463-20e8-4b7e-bcf1-ca9f8ee6ef1f"/>
+          <attribute id="5919026b-224d-4e77-aa01-b08454192f5a"/>
+        </invisibleRuleList>
+        <!-- 属性校验规则 -->
+        <!-- 属性校验规则 系统内置常见规则 如 手机号码、邮箱、身份证号、组织信用代码等 -->
+        <verificationRuleList>
+          <attribute id="8b326463-20e8-4b7e-bcf1-ca9f8ee6ef1f" checkType="mobile"/>
+          <attribute id="5919026b-224d-4e77-aa01-b08454192f5a" checkType="email"/>
+        </verificationRuleList>
+        <!-- 修改规则 -->
+        <modifyRuleList/>
+        <!-- 必填规则 -->
+        <requireRuleList/>
+        <!-- 属性自动计算规则 此处集成规则引擎执行计算 -->
+        <computedAttrRuleList>
+          <attribute id="8b326463-20e8-4b7e-bcf1-ca9f8ee6ef1f" ruleGroupId="规则组ID-1"/>
+          <attribute id="5919026b-224d-4e77-aa01-b08454192f5a" ruleGroupId="规则组ID-2"/>
+        </computedAttrRuleList>
+        <!-- 表单字段权限控制 业务模型中 单独生成配置XML -->
+      </attributeRuleConfig>
+    </detailForm>
+    <detailForm id="子表2 ID" caption="子表2 名称">...</detailForm>
+  </detailFormItems>
+</formDefinitionModel>
+
+Process finished with exit code 0
