@@ -3,6 +3,7 @@ package com.amei.knowledge.schedule;
 import org.quartz.Job;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
+import org.springframework.stereotype.Component;
 import xin.altitude.cms.quartz.annotation.CronExp;
 
 import java.time.LocalDateTime;
@@ -16,6 +17,7 @@ import java.time.LocalDateTime;
  * 启动项目，项目就处于监听与运行中
  */
 @CronExp(cron = "0/5 * * * * ?")
+@Component
 public class Quarterz implements Job {
     @Override
     public void execute(JobExecutionContext jobExecutionContext) throws JobExecutionException {
