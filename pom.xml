@@ -29,8 +29,12 @@
             <version>1.34</version>
             <scope>provided</scope>
         </dependency>
-        <!--       -->
-
+        <!--   定时器 demo    -->
+        <dependency>
+            <groupId>xin.altitude.cms</groupId>
+            <artifactId>ucode-cms-quartz</artifactId>
+            <version>1.5.3.1</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
