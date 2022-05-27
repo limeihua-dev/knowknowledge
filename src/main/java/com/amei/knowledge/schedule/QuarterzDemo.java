@@ -1,9 +1,6 @@
 package com.amei.knowledge.schedule;
 
-import org.quartz.Job;
-import org.quartz.JobDataMap;
-import org.quartz.JobExecutionContext;
-import org.quartz.JobExecutionException;
+import org.quartz.*;
 import org.springframework.stereotype.Component;
 import xin.altitude.cms.quartz.annotation.CronExp;
 
@@ -19,7 +16,8 @@ import java.time.LocalDateTime;
  */
 @CronExp(id = 1, cron = "0 0/1 * * * ? ")
 @Component
-public class Quarterz implements Job {
+@DisallowConcurrentExecution
+public class QuarterzDemo implements Job {
     @Override
     public void execute(JobExecutionContext jobExecutionContext) throws JobExecutionException {
         //任务的具体执行内容
