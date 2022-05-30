@@ -14,8 +14,8 @@ import java.time.LocalDateTime;
  * 第三步：使用注解将任务注入容器
  * 启动项目，项目就处于监听与运行中
  */
-@CronExp(id = 1, cron = "0 0/1 * * * ? ")
-@Component
+//@CronExp(id = 1, cron = "0 0/1 * * * ? ")
+//@Component
 @DisallowConcurrentExecution
 public class QuarterzDemo implements Job {
     @Override
