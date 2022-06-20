@@ -1,8 +1,6 @@
 package com.amei.knowledge.设计模式.迭代器模式;
 
 
-import java.util.Iterator;
-
 public class BookShelf implements Aggregate {
 
     private int last;
