@@ -6,9 +6,7 @@ import lombok.Getter;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ThreadLocalRandom;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 import java.util.stream.Collectors;
 
 public class CompletableFutureMallDemo {
@@ -35,22 +33,48 @@ public class CompletableFutureMallDemo {
     }
 
     public static void main(String[] args) {
-        long startTime = System.currentTimeMillis();
-        List<String> mysql = getPrice(list, "mysql");
-        for (String str : mysql) {
-            System.out.println(str);
-        }
-        long endTime = System.currentTimeMillis();
-        System.out.println(endTime - startTime);
+//        long startTime = System.currentTimeMillis();
+//        List<String> mysql = getPrice(list, "mysql");
+//        for (String str : mysql) {
+//            System.out.println(str);
+//        }
+//        long endTime = System.currentTimeMillis();
+//        System.out.println(endTime - startTime);
+//
+//        long startTime2 = System.currentTimeMillis();
+//        List<String> mysql1 = getPriceCompletableFuture(list, "mysql");
+//        for (String str : mysql1) {
+//            System.out.println(str);
+//        }
+//        long endTime2 = System.currentTimeMillis();
+//        System.out.println(endTime2 - startTime2);
 
-        long startTime2 = System.currentTimeMillis();
-        List<String> mysql1 = getPriceCompletableFuture(list, "mysql");
-        for (String str : mysql1) {
-            System.out.println(str);
-        }
-        long endTime2 = System.currentTimeMillis();
-        System.out.println(endTime2 - startTime2);
-
+        ExecutorService newFixedThreadPool = Executors.newFixedThreadPool(3);
+        //thenApply的使用
+        CompletableFuture.supplyAsync(() ->
+                {
+                    try {
+                        TimeUnit.SECONDS.sleep(1);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    return 1;
+                }, newFixedThreadPool
+        ).thenApply(f -> {
+                    return f + 2;
+                }
+        ).thenApply(f -> {
+                    return f + 2;
+                }
+        ).whenComplete((v, e) -> {
+            if (e == null) {
+                System.out.println("计算结果：" + v);
+            }
+        }).exceptionally(e -> {
+            e.getMessage();
+            return null;
+        });
+        newFixedThreadPool.shutdown();
     }
 
     @Data
