@@ -12,7 +12,8 @@ import java.util.Map;
 public class RabbitDemoConsumer {
 
     @RabbitHandler
-    public void process(Map map) {
+    public void process(Map map)
+    {
         System.out.println("消费者RabbitDemoConsumer从RabbitMQ服务端消费消息：" + map.toString());
     }
 
