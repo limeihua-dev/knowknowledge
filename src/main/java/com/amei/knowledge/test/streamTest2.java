@@ -20,8 +20,10 @@ public class streamTest2 {
             System.out.println();
             i++;
             if (s.equals("B")) {
-                Alist.remove(s);
+//                Alist.remove(s);
+                Alist.add("S");
             }
+
         }
 
 
