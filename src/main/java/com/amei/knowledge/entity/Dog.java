@@ -4,6 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Service;
 
 import java.lang.reflect.Field;
 
@@ -11,6 +14,8 @@ import java.lang.reflect.Field;
 @NoArgsConstructor
 @AllArgsConstructor
 @Slf4j
+@Service
+@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class Dog {
     public long age;
     private String name;
@@ -19,11 +24,11 @@ public class Dog {
         this.name = name;
     }
 
-    String getName() {
+    public String getName() {
         return this.name;
     }
 
-    void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 

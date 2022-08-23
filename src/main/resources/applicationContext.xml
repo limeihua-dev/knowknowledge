@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--set方式注入：值类型和引用类型-->
+    <bean id="a" class="com.amei.knowledge.entity.A" scope="singleton">
+        <!--为User对象中名为name的属性注入tom作为值-->
+        <property name="b" ref="b"></property>
+    </bean>
+
+    <!--必须将car对象配置到容器中-->
+    <bean id="b" class="com.amei.knowledge.entity.B" scope="singleton">
+        <property name="a" ref="a"></property>
+    </bean>
+
+</beans>

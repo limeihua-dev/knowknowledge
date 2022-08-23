@@ -5,13 +5,11 @@ import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
 import org.springframework.amqp.core.DirectExchange;
 import org.springframework.amqp.core.Queue;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
-@Configuration
+//@Configuration
 public class DirectRabbitConfig {
     //队列
-    @Bean
+//    @Bean
     public Queue rabbitmqDemoDirectQueue() {
         /**
          * 1、name 队列名称
@@ -22,13 +20,13 @@ public class DirectRabbitConfig {
         return new Queue(RabbitMQConfig.RABBITMQ_DEMO_TOPIC, true, false, false);
     }
 
-    @Bean
+//    @Bean
     public DirectExchange rabbitmqDemoDirectExchange() {
         //Direct交换机
         return new DirectExchange(RabbitMQConfig.RABBITMQ_DEMO_DIRECT_EXCHANGE, true, false);
     }
 
-    @Bean
+//    @Bean
     public Binding bindDirect() {
         return BindingBuilder
                 //绑定队列

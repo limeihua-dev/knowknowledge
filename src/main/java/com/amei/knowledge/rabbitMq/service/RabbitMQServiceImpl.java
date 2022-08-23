@@ -1,6 +1,5 @@
 package com.amei.knowledge.rabbitMq.service;
 
-import com.amei.knowledge.rabbitMq.config.RabbitMQConfig;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
 
@@ -26,7 +25,7 @@ public class RabbitMQServiceImpl implements RabbitMQService {
             map.put("msgId", msgId);
             map.put("sendTime", sendTime);
             map.put("msg", msg);
-            rabbitTemplate.convertAndSend(RabbitMQConfig.RABBITMQ_DEMO_DIRECT_EXCHANGE, RabbitMQConfig.RABBITMQ_DEMO_DIRECT_ROUTING, map);
+//            rabbitTemplate.convertAndSend(RabbitMQConfig.RABBITMQ_DEMO_DIRECT_EXCHANGE, RabbitMQConfig.RABBITMQ_DEMO_DIRECT_ROUTING, map);
             return "ok";
         } catch (Exception e) {
             e.printStackTrace();
