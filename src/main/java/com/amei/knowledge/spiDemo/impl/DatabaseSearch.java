@@ -10,4 +10,8 @@ public class DatabaseSearch implements Search {
         System.out.println("数据库搜索 " + keyWord);
         return null;
     }
+
+    static {
+        System.out.println("进入DatabaseSearch 方法");
+    }
 }

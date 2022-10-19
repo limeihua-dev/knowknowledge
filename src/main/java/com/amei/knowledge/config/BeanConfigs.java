@@ -1,14 +1,14 @@
 package com.amei.knowledge.config;
 
 import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.mongodb.MongoDbFactory;
+import org.springframework.data.mongodb.MongoTransactionManager;
 
-@Component
+@Configuration
 public class BeanConfigs {
-
-    @Bean
-    public void autowiredA() {
-
-    }
-
+        @Bean
+        MongoTransactionManager transactionManager(MongoDbFactory factory) {
+            return new MongoTransactionManager(factory);
+        }
 }
