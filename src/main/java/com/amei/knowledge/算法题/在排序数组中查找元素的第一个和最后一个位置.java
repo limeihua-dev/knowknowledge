@@ -46,12 +46,12 @@ public class 在排序数组中查找元素的第一个和最后一个位置 {
             }
             //查找元素的右边界
             int R = r;//右边界
-            return nums[left] != target ? new int[]{-1, -1} :new int[]{L, R};
+            return nums[left] != target ? new int[]{-1, -1} : new int[]{L, R};
         }
     }
 
     public static void main(String[] args) {
-        int[] nums = {5,7,7,8,8,10};
+        int[] nums = {5, 7, 7, 8, 8, 10};
         int target = 6;
         int[] ints = searchRange(nums, target);
         for (int item : ints) {
