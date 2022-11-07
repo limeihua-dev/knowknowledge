@@ -12,7 +12,7 @@ spring:
     mongodb:
       host: localhost
       database: ns-limeihua
-      port: 37017
+      port: 47017
       username: admin
       password: admin
       authentication-database: admin

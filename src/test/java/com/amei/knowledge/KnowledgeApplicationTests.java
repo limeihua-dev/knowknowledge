@@ -1,5 +1,6 @@
 package com.amei.knowledge;
 
+import com.amei.knowledge.springboot.async.AsyncMethodTask;
 import com.amei.knowledge.transactionDemo.TransactionalDemo;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,9 @@ class KnowledgeApplicationTests {
     TransactionalDemo transactionalDemo;
 
     @Autowired
+    private AsyncMethodTask asyncMethodTask;
+
+    @Autowired
     ApplicationContext applicationContext;
 
 
@@ -21,10 +25,7 @@ class KnowledgeApplicationTests {
 
     @Test
     void contextLoads() {
-//        File form = new File(FORM_DEFINITION_PATH);
-//        File template = new File(FORM_DEFINITION_TEMPLATE_PATH);
-        TransactionalDemo bean = applicationContext.getBean(TransactionalDemo.class);
-        bean.parentMethods();
+        asyncMethodTask.asyncMethodTaskWithVoidReturnType("a");
     }
 
 
