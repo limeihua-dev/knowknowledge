@@ -15,7 +15,6 @@ class KnowledgeApplicationTests {
 
     @Autowired
     private AsyncMethodTask asyncMethodTask;
-
     @Autowired
     ApplicationContext applicationContext;
 
@@ -25,7 +24,9 @@ class KnowledgeApplicationTests {
 
     @Test
     void contextLoads() {
+        System.out.println("主线程 =====> 开始 =====> " + System.currentTimeMillis());
         asyncMethodTask.asyncMethodTaskWithVoidReturnType("a");
+        System.out.println("主线程 =====> 结束 =====> " + System.currentTimeMillis());
     }
 
 

@@ -10,6 +10,8 @@ import java.util.Random;
 import java.util.concurrent.Future;
 
 /**
+ * 异步执行带返回值
+ *
  * 其中 org.springframework.scheduling.annotation.AsyncResult
  * 实现了 java.util.concurrent.Future 接口，并增加了一些额外有用的功能
  */
