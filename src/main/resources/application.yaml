@@ -6,7 +6,7 @@
 #    username: root
 #    password: 123456
 server:
-  port: 9999
+  port: 9990
 spring:
   data:
     mongodb:
@@ -19,6 +19,7 @@ spring:
   redis:
     port: 6379
     host: localhost
+    database: 0
 #  rabbitmq:
 #    host: localhost
 #    port: 5672
